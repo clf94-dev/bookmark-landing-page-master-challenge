@@ -9,10 +9,10 @@ const navSlide = () => {
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
-
+                document.getElementById('top').style.opacity = 1;
             } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index/5 + 0.3}s`;
-
+                document.getElementById('top').style.opacity = 0.1;
             }
         });
 

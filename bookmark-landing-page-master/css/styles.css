@@ -40,13 +40,30 @@ nav {
     border-color: hsl(0, 94%, 66%);
 }
 
+.nav-links li .btn:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border-color: hsl(0, 94%, 66%);
+}
+
+@media screen and (min-width:769px) {
+    .nav-links li .btn {
+        background-color: hsl(0, 94%, 66%);
+        color: white;
+    }
+}
+
 .nav-links a {
     color: hsl(229, 31%, 21%);
     text-decoration: none;
     letter-spacing: 2px;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 18px;
     transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: hsl(0, 94%, 66%);
 }
 
 .burger {
@@ -74,6 +91,11 @@ nav {
     body {
         overflow-x: hidden;
     }
+    .nav-links li .btn:hover {
+        color: hsl(229, 31%, 21%);
+        border-color: hsl(229, 31%, 21%);
+        background-color: transparent;
+    }
     .nav-links {
         position: absolute;
         right: 0px;
@@ -99,6 +121,7 @@ nav {
     .nav-links li .btn {
         color: white;
         border-color: white;
+        background-color: none;
     }
 }
 
@@ -131,6 +154,69 @@ nav {
 
 
 /*Top Section*/
+
+.download-btn {
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto 3%;
+}
+
+.download-btn-chrome {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    box-shadow: hsl(229, 8%, 60%);
+}
+
+.download-btn-chrome:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border-color: hsl(231, 69%, 60%);
+}
+
+.download-btn-firefox {
+    background-color: hsl(228, 87%, 94%);
+}
+
+.download-btn-firefox:hover {
+    background-color: white;
+    color: hsl(229, 31%, 21%);
+    border-color: hsl(229, 31%, 21%);
+}
+
+.top-col {
+    text-align: left;
+    padding: 5% 7% 5% 10%;
+}
+
+@media screen and (max-width:768px) {
+    .top-col {
+        text-align: center;
+    }
+    .btn-row {
+        margin-left: 3%;
+    }
+}
+
+.top-im {
+    width: 100%;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+h3 {}
+
+h5 {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 2rem;
+    margin: 20px auto;
+}
 
 
 /*Features Section*/
