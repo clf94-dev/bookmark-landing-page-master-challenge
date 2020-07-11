@@ -201,28 +201,113 @@ nav {
     width: 100%;
 }
 
+h1,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+}
+
 h1 {
     font-size: 45px;
-    font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
 
-h3 {}
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
 
 h5 {
     font-size: 18px;
-    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: hsl(229, 8%, 60%);
     line-height: 2rem;
     margin: 20px auto;
 }
 
+h4 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 7% 0 3% 0;
+}
+
+h6 {
+    font-size: 15px;
+    color: hsl(229, 8%, 60%);
+    font-weight: 400;
+    padding-bottom: 7%;
+}
+
 
 /*Features Section*/
 
+.features-cont {
+    text-align: center;
+    padding: 5% 20% 0 20%;
+}
+
+.btn-group {
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+
+.feature-col {
+    text-align: left;
+    padding-top: 5%;
+}
+
+.btn-feat {
+    background-color: hsl(231, 69%, 60%);
+    border-color: hsl(231, 69%, 60%);
+    outline-color: hsl(231, 69%, 60%);
+    color: white;
+}
+
 
 /*Middle Section*/
+
+.middle-cont {
+    text-align: center;
+    padding: 5% 20%;
+}
+
+.card-row {
+    padding: 1% 5%;
+    margin-bottom: 60%;
+}
+
+.fi-ext-card {
+    position: relative;
+    top: 20%;
+}
+
+.op-ext-card {
+    position: relative;
+    top: 40%;
+}
+
+.ch-ext-card,
+.fi-ext-card,
+.op-ext-card {
+    text-align: center;
+}
+
+.dots {
+    padding-bottom: 7%;
+}
+
+.btn-middle {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    box-shadow: hsl(229, 8%, 60%);
+}
+
+.btn-middle:hover {
+    color: white;
+    box-shadow: hsl(229, 8%, 60%);
+}
 
 
 /*Questions Section*/
