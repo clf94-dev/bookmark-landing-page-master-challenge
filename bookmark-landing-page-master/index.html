@@ -13,6 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | Bookmark landing page</title>
@@ -32,7 +33,22 @@
 
 <body>
     <section id="navbar">
-
+        <nav>
+            <div class="logo">
+                <img src="images/logo-bookmark.svg" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="btn btn-navbar btn-lg btn-outline" type="button" name="button">Login</button></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </section>
     <section id="top"></section>
     <section id="features"></section>
@@ -46,6 +62,7 @@
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Carmen Lucas Fornell</a>.
         </p>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
