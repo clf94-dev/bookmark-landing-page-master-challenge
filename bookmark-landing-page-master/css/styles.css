@@ -430,3 +430,41 @@
                                                 margin: 1% auto;
                                             }
                                             /*Bottom Section*/
+                                            
+                                            #bottom {
+                                                background: linear-gradient( 90deg, white, hsl(229, 31%, 21%));
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                #bottom {
+                                                    text-align: center;
+                                                    align-items: center;
+                                                    background: linear-gradient( 180deg, white, hsl(229, 31%, 21%));
+                                                }
+                                            }
+                                            
+                                            .text-color-bot {
+                                                color: white;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .text-color-bot:hover {
+                                                color: hsl(0, 94%, 66%);
+                                                text-decoration: none;
+                                            }
+                                            
+                                            .bottom-icon {
+                                                margin: 2% 5%;
+                                                color: white;
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                .bottom-icon {
+                                                    position: relative;
+                                                    left: 35%;
+                                                }
+                                            }
+                                            
+                                            .bottom-icon:hover {
+                                                color: hsl(0, 94%, 66%);
+                                            }
