@@ -13,6 +13,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/fcb1ee29b4.js" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -130,54 +132,143 @@
 
     </section>
     <section id="middle">
-        <div class="container-fluid middle-cont">
-            <h3>Download the extension</h3>
-            <h5>
-                We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</h5>
-        </div>
-        <div class="container-fluid ">
-            <div class="row card-row">
-                <div class="col-lg-4">
-                    <div class="card ch-ext-card">
-                        <div class="card-body">
-                            <img src="images/logo-chrome.svg" alt="">
-                            <h4> Add to Chrome</h4>
-                            <h6> Minimum version 62</h6>
-                            <img class="dots" src="images/bg-dots.svg" alt="">
+        <div class="container-fluid">
+            <div class="container-fluid middle-cont">
+                <h3>Download the extension</h3>
+                <h5>
+                    We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</h5>
+            </div>
+            <div class="container-fluid ">
+                <div class="row card-row">
+                    <div class="col-lg-4">
+                        <div class="card ch-ext-card">
+                            <div class="card-body">
+                                <img src="images/logo-chrome.svg" alt="">
+                                <h4> Add to Chrome</h4>
+                                <h6> Minimum version 62</h6>
+                                <img class="dots" src="images/bg-dots.svg" alt="">
 
-                            <button class="btn btn-lg btn-middle"> Add & Install Extension</button>
+                                <button class="btn btn-lg btn-middle"> Add & Install Extension</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card fi-ext-card">
-                        <div class="card-body">
-                            <img src="images/logo-firefox.svg" alt="">
-                            <h4> Minimum version 55</h4>
-                            <h6> Add & Install Extension</h6>
-                            <img class="dots" src="images/bg-dots.svg" alt="">
+                    <div class="col-lg-4">
+                        <div class="card fi-ext-card">
+                            <div class="card-body">
+                                <img src="images/logo-firefox.svg" alt="">
+                                <h4>Add to Firefox</h4>
+                                <h6> Minimum version 55</h6>
+                                <img class="dots" src="images/bg-dots.svg" alt="">
 
-                            <button class="btn btn-lg btn-middle"> Add & Install Extension</button>
+                                <button class="btn btn-lg btn-middle"> Add & Install Extension</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card op-ext-card">
-                        <div class="card-body">
-                            <img src="images/logo-opera.svg" alt="">
-                            <h4> Minimum version 46</h4>
-                            <h6> Add & Install Extension</h6>
-                            <img class="dots" src="images/bg-dots.svg" alt="">
+                    <div class="col-lg-4">
+                        <div class="card op-ext-card">
+                            <div class="card-body">
+                                <img src="images/logo-opera.svg" alt="">
+                                <h4>Add to Opera</h4>
+                                <h6> Minimum version 46</h6>
+                                <img class="dots" src="images/bg-dots.svg" alt="">
 
-                            <button class="btn btn-lg btn-middle"> Add & Install Extension</button>
+                                <button class="btn btn-lg btn-middle"> Add & Install Extension</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="questions"></section>
-    <section id="cta"></section>
+    <section id="questions" class="accordion-section clearfix mt3" aria-label="Question Accordions">
+        <div class="container questions-cont">
+            <h2>Frecuently Asked Questions</h2>
+            <h5> Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</h5>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                        What is Bookmark?
+                    </a>
+                        </h3>
+                    </div>
+                    <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                        <div class="panel-body px-3 mb-4">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                How can I request a new browser?
+                    </a>
+                        </h3>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                        <div class="panel-body px-3 mb-4">
+                            <p> Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie
+                                tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                Is there a mobile app?
+                    </a>
+                        </h3>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                        <div class="panel-body px-3 mb-4">
+                            <p> Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+                        <h3 class="panel-title">
+                            <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                What about other Chromium browsers?
+                    </a>
+                        </h3>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                        <div class="panel-body px-3 mb-4">
+                            <p> Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-lg btn-feat quest-btn">  More Info</button>
+        </div>
+    </section>
+    <section id="cta">
+        <div class="container cta-cont">
+            <h6 class="sub-cta">35,000+ already joined </h6>
+            <h2 class="title-cta">
+                Stay up-to-date with what we’re doing</h2>
+            <div class="row cta-row">
+                <div class="col-lg-7 cta-col"><input class="input-cta form-control .form-control-lg col-12 form form-rounded" style="height: 50px" type="email" placeholder="example@email.com">
+                    <div class="invalid-feedback">
+                        Please provide a valid email.
+                    </div>
+                </div>
+                <div class="col-lg-5 cta-col">
+                    <button class="btn btn-lg btn-block btn-cta" type="button" name="button"> Contact Us</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="bottom"></section>
 
     <footer>

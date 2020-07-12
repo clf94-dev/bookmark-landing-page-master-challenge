@@ -1,319 +1,432 @@
-/*Navbar Section*/
+                                            /*Navbar Section*/
+                                            
+                                            * {
+                                                margin: 0px;
+                                                padding: 0px;
+                                                box-sizing: border-box;
+                                            }
+                                            
+                                            nav {
+                                                display: flex;
+                                                justify-content: space-around;
+                                                align-items: center;
+                                                min-height: 10vh;
+                                                font-family: 'Rubik', sans-serif;
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                nav {
+                                                    background-image: linear-gradient(to right, white, hsl(231, 69%, 60%));
+                                                }
+                                                .burger div {
+                                                    background-color: hsl(231, 69%, 60%);
+                                                }
+                                            }
+                                            
+                                            .nav-links {
+                                                display: flex;
+                                                justify-content: space-around;
+                                                width: 30%;
+                                            }
+                                            
+                                            .nav-links li {
+                                                list-style: none;
+                                                margin-top: 30px;
+                                            }
+                                            
+                                            .nav-links li .btn {
+                                                position: relative;
+                                                top: -10px;
+                                                border-color: hsl(0, 94%, 66%);
+                                            }
+                                            
+                                            .nav-links li .btn:hover {
+                                                background-color: white;
+                                                color: hsl(0, 94%, 66%);
+                                                border-color: hsl(0, 94%, 66%);
+                                            }
+                                            
+                                            @media screen and (min-width:769px) {
+                                                .nav-links li .btn {
+                                                    background-color: hsl(0, 94%, 66%);
+                                                    color: white;
+                                                }
+                                            }
+                                            
+                                            .nav-links a {
+                                                color: hsl(229, 31%, 21%);
+                                                text-decoration: none;
+                                                letter-spacing: 2px;
+                                                font-weight: 500;
+                                                font-size: 18px;
+                                                transition: all 0.3s ease;
+                                            }
+                                            
+                                            .nav-links a:hover {
+                                                color: hsl(0, 94%, 66%);
+                                            }
+                                            
+                                            .burger {
+                                                display: none;
+                                                cursor: pointer;
+                                            }
+                                            
+                                            .burger div {
+                                                width: 25px;
+                                                height: 3px;
+                                                background-color: hsl(229, 31%, 21%);
+                                                margin: 5px;
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                .nav-links {
+                                                    width: 50%;
+                                                }
+                                                .nav-links a {
+                                                    align-items: center;
+                                                }
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                body {
+                                                    overflow-x: hidden;
+                                                }
+                                                .nav-links li .btn:hover {
+                                                    color: hsl(229, 31%, 21%);
+                                                    border-color: hsl(229, 31%, 21%);
+                                                    background-color: transparent;
+                                                }
+                                                .nav-links {
+                                                    position: absolute;
+                                                    right: 0px;
+                                                    height: 92vh;
+                                                    top: 10vh;
+                                                    background-image: linear-gradient(to right, white, hsl(231, 69%, 60%));
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    width: 100%;
+                                                    transform: translateX(100%);
+                                                    transition: transform 0.5s ease-in;
+                                                }
+                                                .nav-links li {
+                                                    opacity: 0;
+                                                }
+                                                .nav-links a {
+                                                    color: white;
+                                                }
+                                                .burger {
+                                                    display: block;
+                                                }
+                                                .nav-links li .btn {
+                                                    color: white;
+                                                    border-color: white;
+                                                    background-color: none;
+                                                }
+                                            }
+                                            
+                                            .nav-active {
+                                                transform: translateX(0%);
+                                            }
+                                            
+                                            @keyframes navLinkFade {
+                                                from {
+                                                    opacity: 0;
+                                                    transform: translateX(50px);
+                                                }
+                                                to {
+                                                    opacity: 1;
+                                                    transform: translateX(0px);
+                                                }
+                                            }
+                                            
+                                            .toggle .line1 {
+                                                transform: rotate(-45deg) translate(-5px, 6px);
+                                            }
+                                            
+                                            .toggle .line2 {
+                                                opacity: 0;
+                                            }
+                                            
+                                            .toggle .line3 {
+                                                transform: rotate(45deg) translate(-5px, -6px);
+                                            }
+                                            /*Top Section*/
+                                            
+                                            .download-btn {
+                                                font-weight: bold;
+                                                font-size: 15px;
+                                                margin: auto 3%;
+                                            }
+                                            
+                                            .download-btn-chrome {
+                                                background-color: hsl(231, 69%, 60%);
+                                                color: white;
+                                                box-shadow: hsl(229, 8%, 60%);
+                                            }
+                                            
+                                            .download-btn-chrome:hover {
+                                                background-color: white;
+                                                color: hsl(231, 69%, 60%);
+                                                border-color: hsl(231, 69%, 60%);
+                                            }
+                                            
+                                            .download-btn-firefox {
+                                                background-color: hsl(228, 87%, 94%);
+                                            }
+                                            
+                                            .download-btn-firefox:hover {
+                                                background-color: white;
+                                                color: hsl(229, 31%, 21%);
+                                                border-color: hsl(229, 31%, 21%);
+                                            }
+                                            
+                                            .top-col {
+                                                text-align: left;
+                                                padding: 5% 7% 5% 10%;
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                .top-col {
+                                                    text-align: center;
+                                                }
+                                                .btn-row {
+                                                    margin-left: 3%;
+                                                }
+                                            }
+                                            
+                                            .top-im {
+                                                width: 100%;
+                                            }
+                                            
+                                            h1,
+                                            h2,
+                                            h3,
+                                            h4,
+                                            h5,
+                                            h6 {
+                                                font-family: 'Rubik', sans-serif;
+                                            }
+                                            
+                                            h1 {
+                                                font-size: 45px;
+                                                font-weight: 500;
+                                            }
+                                            
+                                            h3 {
+                                                font-size: 30px;
+                                                font-weight: 500;
+                                            }
+                                            
+                                            h5 {
+                                                font-size: 18px;
+                                                font-weight: 400;
+                                                color: hsl(229, 8%, 60%);
+                                                line-height: 2rem;
+                                                margin: 20px auto;
+                                            }
+                                            
+                                            h4 {
+                                                font-size: 25px;
+                                                font-weight: 500;
+                                                padding: 7% 0 3% 0;
+                                            }
+                                            
+                                            h6 {
+                                                font-size: 15px;
+                                                color: hsl(229, 8%, 60%);
+                                                font-weight: 400;
+                                                padding-bottom: 7%;
+                                            }
+                                            /*Features Section*/
+                                            
+                                            .features-cont {
+                                                text-align: center;
+                                                padding: 5% 20% 0 20%;
+                                            }
+                                            
+                                            .btn-group {
+                                                margin-bottom: 2%;
+                                                margin-left: 15%;
+                                            }
+                                            
+                                            .feature-col {
+                                                text-align: left;
+                                                padding-top: 5%;
+                                            }
+                                            
+                                            .btn-feat {
+                                                background-color: hsl(231, 69%, 60%);
+                                                border-color: hsl(231, 69%, 60%);
+                                                outline-color: hsl(231, 69%, 60%);
+                                                color: white;
+                                            }
+                                            /*Middle Section*/
+                                            
+                                            .middle-cont {
+                                                text-align: center;
+                                                padding: 5% 20% 0 20%;
+                                                margin-bottom: 5%;
+                                            }
+                                            
+                                            .card-row {
+                                                padding: 0 5%;
+                                                margin-bottom: 20%;
+                                            }
+                                            
+                                            @media screen and (max-width: 768px) {
+                                                .card-row {
+                                                    margin-bottom: 40%;
+                                                }
+                                            }
+                                            
+                                            .fi-ext-card {
+                                                position: relative;
+                                                top: 20%;
+                                            }
+                                            
+                                            .op-ext-card {
+                                                position: relative;
+                                                top: 40%;
+                                            }
+                                            
+                                            .ch-ext-card,
+                                            .fi-ext-card,
+                                            .op-ext-card {
+                                                text-align: center;
+                                            }
+                                            
+                                            .dots {
+                                                padding-bottom: 7%;
+                                            }
+                                            
+                                            .btn-middle {
+                                                background-color: hsl(231, 69%, 60%);
+                                                color: white;
+                                                box-shadow: hsl(229, 8%, 60%);
+                                            }
+                                            
+                                            .btn-middle:hover {
+                                                color: white;
+                                                box-shadow: hsl(229, 8%, 60%);
+                                            }
+                                            /*Questions Section*/
+                                            
+                                            h2 {
+                                                font-weight: 500;
+                                                font-size: 30px;
+                                            }
+                                            
+                                            .accordion-section .panel-default>.panel-heading {
+                                                border: 0;
+                                                padding: 0;
+                                            }
+                                            
+                                            .accordion-section .panel-default .panel-title a {
+                                                display: block;
+                                                font-size: 17px;
+                                                text-decoration: none;
+                                                color: black;
+                                            }
+                                            
+                                            .accordion-section .panel-default .panel-title a:hover {
+                                                color: hsl(0, 94%, 66%);
+                                            }
+                                            
+                                            .accordion-section .panel-default .panel-title a:after {
+                                                font-family: 'FontAwesome';
+                                                font-style: normal;
+                                                font-weight: 300;
+                                                font-size: 2rem;
+                                                content: "\f107";
+                                                color: black;
+                                                float: right;
+                                                margin-top: -12px;
+                                            }
+                                            
+                                            .accordion-section .panel-default .panel-body {
+                                                font-size: 15px;
+                                            }
+                                            
+                                            .questions-cont {
+                                                padding: 1% 15%;
+                                                margin-top: 5%;
+                                                text-align: center;
+                                            }
+                                            
+                                            .questions-btn {
+                                                margin: 3% auto;
+                                            }
+                                            /* .accordion-section .panel-default .panel-title a.collapsed:after {
+                                            {
+                                                font-family: 'FontAwesome';
+                                                font-style: normal;
+                                                font-weight: 300;
+                                                font-size: 2rem;
+                                                content='\f106';
+                                                color: black;
+                                                float: right;
+                                                margin-top: -12px;
+                                            }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    font-family: 'Rubik', sans-serif;
-}
-
-@media screen and (max-width:768px) {
-    nav {
-        background-image: linear-gradient(to right, white, hsl(231, 69%, 60%));
-    }
-    .burger div {
-        background-color: hsl(231, 69%, 60%);
-    }
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-}
-
-.nav-links li {
-    list-style: none;
-    margin-top: 30px;
-}
-
-.nav-links li .btn {
-    position: relative;
-    top: -10px;
-    border-color: hsl(0, 94%, 66%);
-}
-
-.nav-links li .btn:hover {
-    background-color: white;
-    color: hsl(0, 94%, 66%);
-    border-color: hsl(0, 94%, 66%);
-}
-
-@media screen and (min-width:769px) {
-    .nav-links li .btn {
-        background-color: hsl(0, 94%, 66%);
-        color: white;
-    }
-}
-
-.nav-links a {
-    color: hsl(229, 31%, 21%);
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: hsl(0, 94%, 66%);
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: hsl(229, 31%, 21%);
-    margin: 5px;
-}
-
-@media screen and (max-width:768px) {
-    .nav-links {
-        width: 50%;
-    }
-    .nav-links a {
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:768px) {
-    body {
-        overflow-x: hidden;
-    }
-    .nav-links li .btn:hover {
-        color: hsl(229, 31%, 21%);
-        border-color: hsl(229, 31%, 21%);
-        background-color: transparent;
-    }
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 10vh;
-        background-image: linear-gradient(to right, white, hsl(231, 69%, 60%));
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-    .nav-links li {
-        opacity: 0;
-    }
-    .nav-links a {
-        color: white;
-    }
-    .burger {
-        display: block;
-    }
-    .nav-links li .btn {
-        color: white;
-        border-color: white;
-        background-color: none;
-    }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-
-/*Top Section*/
-
-.download-btn {
-    font-weight: bold;
-    font-size: 15px;
-    margin: auto 3%;
-}
-
-.download-btn-chrome {
-    background-color: hsl(231, 69%, 60%);
-    color: white;
-    box-shadow: hsl(229, 8%, 60%);
-}
-
-.download-btn-chrome:hover {
-    background-color: white;
-    color: hsl(231, 69%, 60%);
-    border-color: hsl(231, 69%, 60%);
-}
-
-.download-btn-firefox {
-    background-color: hsl(228, 87%, 94%);
-}
-
-.download-btn-firefox:hover {
-    background-color: white;
-    color: hsl(229, 31%, 21%);
-    border-color: hsl(229, 31%, 21%);
-}
-
-.top-col {
-    text-align: left;
-    padding: 5% 7% 5% 10%;
-}
-
-@media screen and (max-width:768px) {
-    .top-col {
-        text-align: center;
-    }
-    .btn-row {
-        margin-left: 3%;
-    }
-}
-
-.top-im {
-    width: 100%;
-}
-
-h1,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Rubik', sans-serif;
-}
-
-h1 {
-    font-size: 45px;
-    font-weight: 500;
-}
-
-h3 {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: 400;
-    color: hsl(229, 8%, 60%);
-    line-height: 2rem;
-    margin: 20px auto;
-}
-
-h4 {
-    font-size: 25px;
-    font-weight: 500;
-    padding: 7% 0 3% 0;
-}
-
-h6 {
-    font-size: 15px;
-    color: hsl(229, 8%, 60%);
-    font-weight: 400;
-    padding-bottom: 7%;
-}
-
-
-/*Features Section*/
-
-.features-cont {
-    text-align: center;
-    padding: 5% 20% 0 20%;
-}
-
-.btn-group {
-    margin-bottom: 2%;
-    margin-left: 15%;
-}
-
-.feature-col {
-    text-align: left;
-    padding-top: 5%;
-}
-
-.btn-feat {
-    background-color: hsl(231, 69%, 60%);
-    border-color: hsl(231, 69%, 60%);
-    outline-color: hsl(231, 69%, 60%);
-    color: white;
-}
-
-
-/*Middle Section*/
-
-.middle-cont {
-    text-align: center;
-    padding: 5% 20%;
-}
-
-.card-row {
-    padding: 1% 5%;
-    margin-bottom: 60%;
-}
-
-.fi-ext-card {
-    position: relative;
-    top: 20%;
-}
-
-.op-ext-card {
-    position: relative;
-    top: 40%;
-}
-
-.ch-ext-card,
-.fi-ext-card,
-.op-ext-card {
-    text-align: center;
-}
-
-.dots {
-    padding-bottom: 7%;
-}
-
-.btn-middle {
-    background-color: hsl(231, 69%, 60%);
-    color: white;
-    box-shadow: hsl(229, 8%, 60%);
-}
-
-.btn-middle:hover {
-    color: white;
-    box-shadow: hsl(229, 8%, 60%);
-}
-
-
-/*Questions Section*/
-
-
-/*CallToAction Section*/
-
-
-/*Bottom Section*/
+                                            */
+                                            /*CallToAction Section*/
+                                            
+                                            #cta {
+                                                background-color: hsl(231, 69%, 60%);
+                                            }
+                                            
+                                            .btn-cta {
+                                                align-items: stretch;
+                                                background-color: hsl(0, 94%, 66%);
+                                                color: white;
+                                                border-color: hsl(0, 94%, 66%);
+                                                margin: 1% auto;
+                                                border-radius: 25px;
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                .cta-row {
+                                                    text-align: center;
+                                                }
+                                                .cta-cont {
+                                                    margin: 1%;
+                                                }
+                                            }
+                                            
+                                            .btn-cta:hover {
+                                                background-color: white;
+                                                color: hsl(0, 94%, 66%);
+                                                border-color: hsl(0, 94%, 66%);
+                                            }
+                                            
+                                            .title-cta {
+                                                padding-bottom: 3%;
+                                            }
+                                            
+                                            .sub-cta {
+                                                color: white;
+                                                text-transform: uppercase;
+                                                letter-spacing: 4px;
+                                                padding-bottom: 1% !important;
+                                            }
+                                            
+                                            .cta-cont {
+                                                padding: 5% 0;
+                                                text-align: center;
+                                                align-items: center;
+                                            }
+                                            
+                                            .cta-row {
+                                                margin: 1% 15%;
+                                            }
+                                            
+                                            .form-rounded {
+                                                border-radius: 2rem;
+                                                align-items: stretch;
+                                            }
+                                            
+                                            .cta-col {
+                                                margin: 1% auto;
+                                            }
+                                            /*Bottom Section*/
