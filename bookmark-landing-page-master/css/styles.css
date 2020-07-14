@@ -240,9 +240,23 @@
                                             }
                                             /*Features Section*/
                                             
+                                            #one-click {
+                                                border-bottom-color: hsl(0, 94%, 66%);
+                                                border-bottom-width: 3px;
+                                            }
+                                            
+                                            .row-feat {
+                                                height: 450px;
+                                                margin-bottom: 5%;
+                                            }
+                                            
+                                            .feat-text-col {
+                                                padding-right: 10%;
+                                            }
+                                            
                                             .features-cont {
                                                 text-align: center;
-                                                padding: 5% 20% 0 20%;
+                                                padding: 5% 20% 5% 20%;
                                             }
                                             
                                             .btn-group {
@@ -251,8 +265,13 @@
                                             }
                                             
                                             .feature-col {
-                                                text-align: left;
-                                                padding-top: 5%;
+                                                text-align: center;
+                                            }
+                                            
+                                            .group-btn:focus,
+                                            .group-btn:active {
+                                                outline: none !important;
+                                                box-shadow: none;
                                             }
                                             
                                             .btn-feat {
@@ -260,6 +279,27 @@
                                                 border-color: hsl(231, 69%, 60%);
                                                 outline-color: hsl(231, 69%, 60%);
                                                 color: white;
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                .btn-group {
+                                                    margin: 5%;
+                                                }
+                                                .feature-col {
+                                                    padding: 1% 5%;
+                                                    width: 100%;
+                                                }
+                                                .feat-im {
+                                                    width: 100%;
+                                                    margin-bottom: 1%;
+                                                }
+                                                .row-feat {
+                                                    height: 50%;
+                                                }
+                                                .feat-text-col {
+                                                    text-align: center;
+                                                    padding: 3% 7% 6% 7%;
+                                                }
                                             }
                                             /*Middle Section*/
                                             
