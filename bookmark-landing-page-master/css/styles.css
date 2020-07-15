@@ -251,12 +251,12 @@
                                             }
                                             
                                             .feat-text-col {
-                                                padding-right: 10%;
+                                                padding-right: 15%;
                                             }
                                             
                                             .features-cont {
                                                 text-align: center;
-                                                padding: 5% 20% 5% 20%;
+                                                padding: 5% 20% 2% 20%;
                                             }
                                             
                                             .btn-group {
@@ -305,7 +305,7 @@
                                             
                                             .middle-cont {
                                                 text-align: center;
-                                                padding: 5% 20% 0 20%;
+                                                padding: 3% 20% 0 20%;
                                                 margin-bottom: 5%;
                                             }
                                             
@@ -389,7 +389,7 @@
                                             }
                                             
                                             .questions-cont {
-                                                padding: 1% 15%;
+                                                padding: 1% 15% 5% 15%;
                                                 margin-top: 5%;
                                                 text-align: center;
                                             }
@@ -441,7 +441,14 @@
                                             }
                                             
                                             .title-cta {
+                                                color: white;
                                                 padding-bottom: 3%;
+                                            }
+                                            
+                                            @media screen and (max-width:768px) {
+                                                .title-cta {
+                                                    padding: 2% 5%;
+                                                }
                                             }
                                             
                                             .sub-cta {
@@ -472,14 +479,15 @@
                                             /*Bottom Section*/
                                             
                                             #bottom {
-                                                background: linear-gradient( 90deg, white, hsl(229, 31%, 21%));
+                                                background-color: hsl(229, 31%, 21%);
+                                                padding: 2% 7%;
                                             }
                                             
                                             @media screen and (max-width:768px) {
                                                 #bottom {
                                                     text-align: center;
                                                     align-items: center;
-                                                    background: linear-gradient( 180deg, white, hsl(229, 31%, 21%));
+                                                    background-color: hsl(229, 31%, 21%);
                                                 }
                                             }
                                             
@@ -496,6 +504,15 @@
                                             .bottom-icon {
                                                 margin: 2% 5%;
                                                 color: white;
+                                            }
+                                            
+                                            .icon-row {
+                                                position: relative;
+                                                right: 1px;
+                                            }
+                                            
+                                            .footer-logo {
+                                                width: 50%;
                                             }
                                             
                                             @media screen and (max-width:768px) {
